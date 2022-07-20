@@ -536,3 +536,11 @@ h3{
 H2 { text-align: center }
 H3 { text-align: center }
 H4 { text-align: center }
+.class1 {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
