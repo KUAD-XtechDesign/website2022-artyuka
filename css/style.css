@@ -409,15 +409,15 @@ profileページ
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url("./images/DSC_1012.jpg")
+    background:url(https://www.cinemacafe.net/imgs/thumb_h1/565970.jpg)
 }
 
 .slider-item02 {
-    background:url(IMG_0173.JPG);
+    background:url(https://shs.kyoto-art.ac.jp/img/life_img09@2x.jpg?v=1);
 }
 
 .slider-item03 {
-    background:url(https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/img/img_03.jpg);
+    background:url(https://shs.kyoto-art.ac.jp/img/life_img06@2x.jpg?v=1);
 }
 
 .slider-item {
