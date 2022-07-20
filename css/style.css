@@ -505,7 +505,7 @@ h1{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size:6vw;
+  font-size:4vw;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -534,11 +534,12 @@ h3{
   background-color: #ffb6c1;
 }
 h4{
-  font-size:200%;
+  font-size:150%;
 }
 H2 { text-align: center }
 H3 { text-align: center }
 H4 { text-align: center }
+H5{text-align: center}
 .class1 {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -551,4 +552,46 @@ H4 { text-align: center }
 
   align-items: center;
   justify-content: center;
+}
+.button15 a {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ffcbcf;
+  border-radius: 50vh;
+  transition: 0.3s;
+}
+
+.button15 a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50vh;
+}
+
+.button15 a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #00000000;
+  border-right: 3px solid #000000;
+}
+
+.button15 a:hover {
+  text-decoration: none;
+  background-color: #ffacad;
 }
