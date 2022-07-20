@@ -409,11 +409,11 @@ profileページ
 /*　背景画像設定　*/
 
 .slider-item01 {
-    background:url(https://media1.tokyodisneyresort.jp/images/adventure/blog/img220307_1.jpg)
+    background:url("./images/DSC_1012.jpg")
 }
 
 .slider-item02 {
-    background:url(https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/img/img_02.jpg);
+    background:url(IMG_0173.JPG);
 }
 
 .slider-item03 {
