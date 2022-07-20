@@ -595,3 +595,7 @@ H5{text-align: center}
   text-decoration: none;
   background-color: #ffacad;
 }
+.sample img {
+  width: 150px;
+  height: auto;
+  }
