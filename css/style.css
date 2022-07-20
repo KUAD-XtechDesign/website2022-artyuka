@@ -598,4 +598,8 @@ H5{text-align: center}
 .sample img {
   width: 150px;
   height: auto;
+
   }
+  .link_menu{
+    text-align : center;
+   }
