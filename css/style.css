@@ -130,7 +130,7 @@ header .inner {
   border-radius: 20px;
   right: 10px;
   top: 7px;
-  background-color: #ccc;
+  background-color: rgb(255, 206, 246);
   z-index: 30;
   cursor: pointer;
   display: none;
