@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: #fff0f5;
   position: relative;
 }
 
@@ -130,7 +130,7 @@ header .inner {
   border-radius: 20px;
   right: 10px;
   top: 7px;
-  background-color: #ccc;
+  background-color: rgb(255, 206, 246);
   z-index: 30;
   cursor: pointer;
   display: none;
@@ -309,7 +309,7 @@ reportページ
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/IMG_8530.JPG);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -395,3 +395,244 @@ profileページ
 .mb_m {
   margin-bottom: 20px;
 }
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    position:relative;
+  z-index: 1;
+  /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+  height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+/*　背景画像設定　*/
+
+.slider-item01 {
+    background:url(https://www.cinemacafe.net/imgs/thumb_h1/565970.jpg)
+}
+
+.slider-item02 {
+    background:url(https://shs.kyoto-art.ac.jp/img/life_img09@2x.jpg?v=1);
+}
+
+.slider-item03 {
+    background:url(https://shs.kyoto-art.ac.jp/img/life_img06@2x.jpg?v=1);
+}
+
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+  z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #ccc;/*矢印の色*/
+    border-right: 2px solid #ccc;/*矢印の色*/
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  position: relative;
+  z-index: 3;
+    text-align:center;
+  margin:-50px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+/*========= レイアウトのためのCSS ===============*/
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #000;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+h1{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:4vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.container{
+  background:#555;
+}
+
+.container p{
+  padding: 300px 0; 
+  text-align: center;
+  color: #000;
+}
+h2{
+  font-size:200%;
+  color: #fff;
+  background-color: #ffb6c1;
+}
+h3{
+  font-size:100%;
+  color: #fff;
+  background-color: #ffb6c1;
+}
+h4{
+  font-size:150%;
+}
+H2 { text-align: center }
+H3 { text-align: center }
+H4 { text-align: center }
+H5{text-align: center}
+.class1 {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.class2 {
+
+  align-items: center;
+  justify-content: center;
+}
+.button15 a {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ffcbcf;
+  border-radius: 50vh;
+  transition: 0.3s;
+}
+
+.button15 a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50vh;
+}
+
+.button15 a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #00000000;
+  border-right: 3px solid #000000;
+}
+
+.button15 a:hover {
+  text-decoration: none;
+  background-color: #ffacad;
+}
+.sample img {
+  width: 300px;
+  height: auto;
+
+  }
+  .link_menu{
+    text-align : center;
+   }
+
+   .each_link{
+    text-align : center;
+   }
+   .link_txt{
+    text-align : center;
+   }
+   .contents{
+    text-align : center;
+   }
+   .picture{
+    text-align : center;
+   }
+
+   /* タイトル付　枠　1　*/
+.kakomi-box11 {
+  position: relative;
+  margin: 2em auto;
+  padding: 1.2em;
+  color: #555555; /* 文章色 */
+  background-color: #fff; /* 背景色 */
+  border: 1px solid #555555; /* 枠線の太さ・色 */
+  width: 90%;
+ }
+ .title-box11 {
+  position: absolute;
+  padding: 0 .5em;
+  left: 20px;
+  top: -15px;
+  font-weight: bold;
+  background-color: #fff; /* タイトル背景色 */
+  color: #555555; /* タイトル文字色 */
+ }

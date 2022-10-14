@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<title>6-1-1 横移動させて全画面で見せる</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/css/6-1-1.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <ul class="slider">
+    <li class="slider-item slider-item01"></li>
+    <li class="slider-item slider-item02"></li>
+    <li class="slider-item slider-item03"></li>
+  </ul>
+<!--/wrapper--></div>
+  
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script></body>
+
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -21,61 +48,78 @@
       <div class="inner">
         <div id="menu_btn"></div>
         <p id="header_logo">
-          <a href="./index.html"><img src="./images/logo.svg" alt="" /></a>
+          <ul id="global_menu">
+            <li><a href="./profile.html">私について</a></li>
+            <li><a href="./works.html">お仕事</a></li>
+            <li><a href="./slide.html">作った食べ物</a></li>
+            <li><a href="./report.html">布教
+            </a></li>
+          </ul>
         </p>
-        <ul id="global_menu">
-          <li><a href="./profile.html">profile</a></li>
-          <li><a href="./works.html">works</a></li>
-          <li><a href="./slide.html">slide</a></li>
-          <li><a href="./report.html">report</a></li>
-        </ul>
+       
       </div>
     </header>
 
-    <div class="top_eye_catch">サイトの名前など</div>
+ 
 
     <div class="contents">
       <section class="sec">
-        <h2>更新履歴</h2>
-        <ul>
-          <li><a href="./report.html">レポートを追加しました</a></li>
-          <li><a href="./works.html">WORKSページを追加しました</a></li>
-        </ul>
+        <h2>ABOUT ME</h2><br>
+<h4>高木　優花<br><br>
+  誕生日　2月2日<br><br>
+
+
+</h4>
       </section>
 
       <section class="sec">
-        <h2>MENU</h2>
+        <h3>MENU</h3>
         <div class="link_menu">
           <div class="each_link">
-            <div class="link_pic">
-              <img src="./images/toy01.jpg" />
-            </div>
             <div class="link_txt">
               <p class="link_title">PROFILE</p>
+              <p class="sample">
+                <img src="./images/DSC_1012.jpg" width="200" height="100" alt="picture">
+                </p>
+              
               <div>
-                これまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキスト<br />
-                これまでの経歴を紹介しますダミーテキストこれまでの経歴を紹介しますダミーテキスト
+                <h5>こんにちは。素晴らしい人間です。<br />
+                最高最高✌️<br>
+                ナルシストです❤️<br>
+              </h5>
+              </div><br>
+              <div class="button15">
+                <a href="./profile.html">育成歴はこちら</a><br>
+                <p class="link_title">作品集</p>
+                <p class="sample">
+                  <img src="./images/IMG_8530.JPG" width="200" height="100" alt="picture">
+                  </p>
+              <a class="link_btn" href="./works.html">作品集</a><br>
+              <ul>
+                <p class="link_title">パン、お菓子作り</p>
+                <img src="./images//IMG_5066.JPG" width="200" height="100" alt="picture">
+                <li><a href="./slide.html">食べ物達</a></li><br>
+                <p class="link_title">趣味
+                </p>
+                <li><a href="./report.html">映画レポ（布教）</a></li><br>
+               
               </div>
-              <a class="link_btn" href="./profile.html">Go!</a>
             </div>
           </div>
 
           <div class="each_link">
             <div class="link_pic">
-              <img src="./images/toy02.jpg" />
+             
             </div>
-            <div class="link_txt">
-              <p class="link_title">WORKS</p>
-              <div>
-                作品を紹介しますダミーテキスト作品を紹介しますダミーテキスト作品を紹介しますダミーテキスト作品を紹介しますダミーテキスト作品を紹介しますダミーテキスト作品を紹介しますダミーテキスト
-              </div>
-              <a class="link_btn" href="./works.html">Go!</a>
-            </div>
+
+            
           </div>
         </div>
       </section>
     </div>
 
-    <footer>名前など</footer>
+    <footer>高木優花</footer>
   </body>
 </html>
+
+
